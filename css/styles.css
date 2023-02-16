@@ -41,3 +41,20 @@ section:only-child {
     background-color: whitesmoke;
     color: darkslategray;
 }
+
+/* Sectons are content width by default (the text and padding inside), but due to that they do not take up all the space ont he row. Flex gro allows items to grow beyond their content with to take up the extra space when there is space. Default is flex-grow: 0 (no grow), and flex-grow: 1; (yes grow) */
+
+/* by default all flex items are flex-shrink: 1 (shrink on). If items cannot shrink, they become the max content width. */
+section {
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto; */
+    /* flex shorthand: grow shrin basis */
+    /* flex: 1 1 33%; */
+    flex: 1;
+}
+
+section:nth-child(3) {
+    /* flex-grow: 2; */
+    /* this item gets 4 times of the extra remaining space */
+}
